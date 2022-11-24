@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To find the factorial of a number</title>
+</head>
+<body>
+    <input type="number" name="Enter a number" id="num"/>
+    <button onclick="factorial()" >Factorial</button>
+    <p id="viewoutput"></p>
+    <script type="text/javascript"> 
+    
+    function factorial(){
+        let num,i,fac=1;
+        num=document.getElementById("num").value;
+          for(i=1;i<=num;i++){
+            fac=fac*i;
+          }
+            
+        document.getElementById("viewoutput").innerHTML="The factorial of the number " + num + " is:" + fac;
+        }
+   
+    </script>
+    
+</body>
+</html>
